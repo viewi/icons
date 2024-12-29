@@ -1,6 +1,6 @@
 <?php
 
-namespace ViewiIcons;
+namespace Viewi\Icons;
 
 use Viewi\Builder\Attributes\Skip;
 use Viewi\Packages\ViewiPackage;

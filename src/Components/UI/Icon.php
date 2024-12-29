@@ -1,6 +1,6 @@
 <?php
 
-namespace ViewiIcons\Icons;
+namespace Viewi\Icons\UI;
 
 use Viewi\Components\BaseComponent;
 

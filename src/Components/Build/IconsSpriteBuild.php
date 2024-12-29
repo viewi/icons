@@ -1,13 +1,13 @@
 <?php
 
-namespace ViewiIcons\Icons;
+namespace Viewi\Icons\Build;
 
 use Viewi\Builder\Attributes\Skip;
 use Viewi\Builder\BuildAction\BuildActionItem;
 use Viewi\Builder\BuildAction\IPostBuildAction;
 use Viewi\Builder\Builder;
 use Viewi\TemplateParser\TagItemConverter;
-use ViewiIcons\ViewiIconsPackage;
+use Viewi\Icons\ViewiIcons;
 
 #[Skip]
 class IconsSpriteBuild implements IPostBuildAction
@@ -15,7 +15,7 @@ class IconsSpriteBuild implements IPostBuildAction
     public function build(Builder $builder, array $props): ?BuildActionItem
     {
         $tokens = $builder->getTokensMap();
-        $fullSprite = file_get_contents(ViewiIconsPackage::getComponentsPath() . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR . 'bootstrap-icons.svg');
+        $fullSprite = file_get_contents(ViewiIcons::getComponentsPath() . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR . 'bootstrap-icons.svg');
         $symbols = explode("<symbol ", $fullSprite);
         $sprite = $symbols[0];
         $length = count($symbols);
