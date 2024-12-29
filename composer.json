@@ -1,0 +1,20 @@
+{
+    "name": "viewi/icons",
+    "description": "SVG icons package for Viewi",
+    "type": "library",
+    "require": {
+        "viewi/viewi": "^2.4"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Viewi\\Icons\\": "src/Components/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ivan Voitovych",
+            "email": "col606v@gmail.com"
+        }
+    ]
+}
