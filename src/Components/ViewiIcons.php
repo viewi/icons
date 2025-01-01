@@ -27,4 +27,14 @@ class ViewiIcons extends ViewiPackage
     {
         return 'viewi-icons';
     }
+
+    public static function assetsPath(): ?string
+    {
+        return null;
+    }
+
+    public static function getDependencies(): array
+    {
+        return [];
+    }
 }
