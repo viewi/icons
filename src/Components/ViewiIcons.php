@@ -8,9 +8,9 @@ use Viewi\Packages\ViewiPackage;
 #[Skip]
 class ViewiIcons extends ViewiPackage
 {
-    public static function getComponentsPath(): ?string
+    public static function getComponentsPath(): array
     {
-        return __DIR__;
+        return [__DIR__];
     }
 
     public static function jsDir(): ?string
@@ -36,5 +36,10 @@ class ViewiIcons extends ViewiPackage
     public static function getDependencies(): array
     {
         return [];
+    }
+
+    public static function getSpritePath(): string
+    {
+        return __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'assets' . DIRECTORY_SEPARATOR . 'bootstrap-icons.svg';
     }
 }
