@@ -8,4 +8,6 @@ class Icon extends BaseComponent
 {
     public string $name = 'bi-house-door';
     public ?string $classList = null;
+    public ?string $width = null;
+    public ?string $height = null;
 }
